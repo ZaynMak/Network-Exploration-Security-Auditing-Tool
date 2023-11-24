@@ -1,4 +1,4 @@
-import time, sys, json, subprocess
+import time, sys, json, subprocess, http.client
 
 results = {}
 def main():
@@ -11,14 +11,10 @@ def main():
         line = line.strip()
         results[line]={'scan_ time': time.time()}
         ipv4s = scanner(line)
-        # print("line: " + line + " ipv4s")
         ipv6s = scanner(line, 'AAAA')
-        # print("line: " + line + " ipv6s")
-        # ipv4s = ipv4_scanner(line)
-        # ipv6s = ipv6_scanner(line)
+        http_helper(line)
         results[line]['ipv4'] = ipv4s
         results[line]['ipv6'] = ipv6s
-
         #call other scanners for each website
 
     
@@ -64,57 +60,16 @@ def scanner(name, typ = 'A'):
 
     return ipvs
 
-def ipv4_scanner(name):
-    ipv4s = []
-    for resolver in open('public_dns_resolvers.txt', 'r'):
-        resolver = resolver.strip()
+def http_helper(name):
+    connect = http.client.HTTPSConnection(name)
+    connect.request("GET", "/1/", headers={"Host": name})
+    response = connect.getresponse()
+    for line in response.msg.as_string().splitlines():
+        #print(line)
 
-        try:
-            result = subprocess.check_output(["nslookup", name, resolver], timeout = 2, stderr = subprocess.STDOUT).decode('utf-8')
-        except subprocess.TimeoutExpired:
-            continue
-        # print("before result" + result)
-        # find where non-authoritative answer is
-        start = result.find("Non-authoritative answer:") + 25
-        result = result[start:].strip()
-        # print("after result" + result)
-        # find where the address is
-        while result.find("Address:") != -1:
-            start = result.find("Address:") + 8
-            end = result.find("\n", start)
-            temp = result[start:end]
-            if temp not in ipv4s:
-                ipv4s.append(result[start:end])
-            result = result[end:].strip()
-    
-    return ipv4s
-
-def ipv6_scanner(name):
-    ipv6s = []
-    for resolver in open('public_dns_resolvers.txt', 'r'):
-        resolver = resolver.strip()
-
-        try:
-            result = subprocess.check_output(["nslookup", name, resolver, '-type=AAAA'], timeout = 2, stderr = subprocess.STDOUT).decode('utf-8')
-        except subprocess.TimeoutExpired:
-            continue
-        # print(result)
-        # print("before result" + result)
-        # find where non-authoritative answer is
-        start = result.find("Non-authoritative answer:") + 25
-        result = result[start:].strip()
-        # print("after result" + result)
-        # find where the address is
-        while result.find("Address:") != -1:
-            start = result.find("Address:") + 8
-            end = result.find("\n", start)
-            temp = result[start:end]
-            if temp not in ipv6s:
-                ipv6s.append(result[start:end])
-            result = result[end:].strip()
-    
-    return ipv6s
-
+        # server 5.4
+        
+        pass
 
 if __name__ == "__main__":
     main()
