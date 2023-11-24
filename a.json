@@ -1,408 +1,502 @@
 {
+    "accuweather.com": {
+        "http_server": null,
+        "insecure_http": false,
+        "scan_ time": 1700852782.40401
+    },
+    "allrecipes.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852775.976775
+    },
     "amazon.com": {
-        "ipv4": [
-            " 54.239.28.85",
-            " 52.94.236.248",
-            " 205.251.242.10",
-            " 205.251.242.103",
-            " 52.94.236.24",
-            " 54.239.28.8"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802639.8420448
+        "http_server": "Server",
+        "insecure_http": true,
+        "scan_ time": 1700852761.682963
     },
-    "asee.org": {
-        "ipv4": [
-            " 20.49.104.4"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700803021.341214
+    "aol.com": {
+        "http_server": "ATS",
+        "insecure_http": true,
+        "scan_ time": 1700852778.095142
     },
-    "auditoryneuroscience.com": {
-        "ipv4": [
-            " 144.214.26.11"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802998.2887208
+    "apartments.com": {
+        "http_server": "AkamaiGHost",
+        "insecure_http": true,
+        "scan_ time": 1700852790.076076
     },
-    "clocktab.com": {
-        "ipv4": [
-            " 172.67.172.37",
-            " 104.21.47.19",
-            " 104.21.47.194",
-            " 172.67.172.3",
-            " 172.64.80."
-        ],
-        "ipv6": [
-            "2606:4700:3036::ac43:ac25",
-            "2606:4700:3036::6815:2fc2",
-            "2606:4700:130:436c:6f75:6466:6c61:7265"
-        ],
-        "scan_ time": 1700802979.783993
+    "apple.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852764.655626
+    },
+    "bankofamerica.com": {
+        "http_server": "BigIP",
+        "insecure_http": true,
+        "scan_ time": 1700852790.8731039
+    },
+    "bbb.org": {
+        "http_server": "awselb/2.0",
+        "insecure_http": true,
+        "scan_ time": 1700852791.140534
+    },
+    "bestbuy.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852769.3139358
+    },
+    "bleacherreport.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852780.767918
+    },
+    "books.google.com": {
+        "http_server": "OFE/0.1",
+        "insecure_http": true,
+        "scan_ time": 1700852790.618921
+    },
+    "britannica.com": {
+        "http_server": "awselb/2.0",
+        "insecure_http": true,
+        "scan_ time": 1700852768.495309
+    },
+    "businessinsider.com": {
+        "http_server": "Varnish",
+        "insecure_http": true,
+        "scan_ time": 1700852768.7347698
+    },
+    "ca.gov": {
+        "http_server": "Microsoft-Azure-Application-Gateway/v2",
+        "insecure_http": true,
+        "scan_ time": 1700852780.475692
+    },
+    "cbssports.com": {
+        "http_server": "ContentServer",
+        "insecure_http": true,
+        "scan_ time": 1700852780.227628
+    },
+    "chase.com": {
+        "http_server": "BigIP",
+        "insecure_http": true,
+        "scan_ time": 1700852789.4019148
+    },
+    "cnet.com": {
+        "http_server": "nginx/1.25.3",
+        "insecure_http": true,
+        "scan_ time": 1700852776.559403
+    },
+    "cnn.com": {
+        "http_server": "Varnish",
+        "insecure_http": true,
+        "scan_ time": 1700852765.583114
+    },
+    "craigslist.org": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852763.417073
+    },
+    "dictionary.com": {
+        "http_server": "Varnish",
+        "insecure_http": true,
+        "scan_ time": 1700852768.855693
+    },
+    "ebay.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852763.675937
     },
     "en.wikipedia.org": {
-        "ipv4": [
-            " 208.80.154.22",
-            " 208.80.153.22",
-            " 185.15.59.22"
-        ],
-        "ipv6": [
-            "2620:0:861:ed1a::1",
-            "2620:0:860:ed1a::1",
-            "2a02:ec80:300:ed1a::1"
-        ],
-        "scan_ time": 1700802584.3747358
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852761.1603122
+    },
+    "espn.com": {
+        "http_server": "Apache/2.4.6 (CentOS) PHP/5.4.16 OpenSSL/1.0.2k-fips",
+        "insecure_http": true,
+        "scan_ time": 1700852764.758263
+    },
+    "etsy.com": {
+        "http_server": "Varnish",
+        "insecure_http": true,
+        "scan_ time": 1700852764.4102662
+    },
+    "expedia.com": {
+        "http_server": "AkamaiGHost",
+        "insecure_http": true,
+        "scan_ time": 1700852791.379158
     },
     "facebook.com": {
-        "ipv4": [
-            " 157.240.254.3",
-            " 157.240.249.3",
-            " 31.13.71.3",
-            " 157.240.229.3",
-            " 31.13.80.3",
-            " 157.240.22.3",
-            " 31.13.66.3",
-            " 157.240.14.3",
-            " 157.240.15.3",
-            " 157.240.245.3",
-            " 157.240.0.3",
-            " 157.240.252.3",
-            " 31.13.88.3"
-        ],
-        "ipv6": [
-            "2a03:2880:f175:181:face:b00c:0:25de",
-            "2a03:2880:f175:81:face:b00c:0:25de",
-            "2a03:2880:f112:83:face:b00c:0:25de",
-            "2a03:2880:f103:181:face:b00c:0:25de",
-            "2a03:2880:f10e:83:face:b00c:0:25de",
-            "2a03:2880:f131:83:face:b00c:0:25de",
-            "2a03:2880:f103:83:face:b00c:0:25de",
-            "2a03:2880:f12c:183:face:b00c:0:25de",
-            "2a03:2880:f10c:181:face:b00c:0:25de",
-            "2a03:2880:f172:81:face:b00c:0:25de",
-            "2a03:2880:f176:181:face:b00c:0:25de",
-            "2a03:2880:f177:185:face:b00c:0:25de",
-            "2a03:2880:f111:181:face:b00c:0:25de"
-        ],
-        "scan_ time": 1700802619.629123
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852761.541153
     },
     "fandom.com": {
-        "ipv4": [
-            " 199.232.212.194",
-            " 199.232.208.19",
-            " 199.232.208.194",
-            " 199.232.212.19"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802711.4029791
+        "http_server": "Varnish",
+        "insecure_http": true,
+        "scan_ time": 1700852762.50119
     },
-    "gradeinflation.com": {
-        "ipv4": [
-            " 51.79.45.18"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700803042.87447
+    "fb.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852765.178103
     },
-    "illinois.edu": {
-        "ipv4": [
-            " 192.17.172."
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802941.256711
+    "finance.yahoo.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852776.691783
+    },
+    "foodnetwork.com": {
+        "http_server": "awselb/2.0",
+        "insecure_http": true,
+        "scan_ time": 1700852779.785291
+    },
+    "forbes.com": {
+        "http_server": "Varnish",
+        "insecure_http": true,
+        "scan_ time": 1700852776.439212
+    },
+    "foxnews.com": {
+        "http_server": "AkamaiGHost",
+        "insecure_http": true,
+        "scan_ time": 1700852775.5556521
+    },
+    "gamepedia.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852765.818526
+    },
+    "genius.com": {
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "scan_ time": 1700852775.77653
+    },
+    "glassdoor.com": {
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "scan_ time": 1700852776.2947671
+    },
+    "go.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852787.873155
+    },
+    "google.com": {
+        "http_server": "gws",
+        "insecure_http": true,
+        "scan_ time": 1700852765.445045
+    },
+    "groupon.com": {
+        "http_server": "Groupon",
+        "insecure_http": true,
+        "scan_ time": 1700852788.227489
+    },
+    "healthline.com": {
+        "http_server": "AmazonS3",
+        "insecure_http": true,
+        "scan_ time": 1700852764.311311
+    },
+    "homedepot.com": {
+        "http_server": "nginx/1.25.2",
+        "insecure_http": true,
+        "scan_ time": 1700852766.7796302
+    },
+    "huffpost.com": {
+        "http_server": "lighttpd/1.4.55",
+        "insecure_http": true,
+        "scan_ time": 1700852790.429328
+    },
+    "hulu.com": {
+        "http_server": "AkamaiGHost",
+        "insecure_http": true,
+        "scan_ time": 1700852779.879646
+    },
+    "ign.com": {
+        "http_server": "Varnish",
+        "insecure_http": true,
+        "scan_ time": 1700852791.701962
     },
     "imdb.com": {
-        "ipv4": [
-            " 52.94.225.248",
-            " 52.94.237.74",
-            " 52.94.228.16",
-            " 52.94.228.167",
-            " 52.94.225.24",
-            " 52.94.237.7"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802693.826133
+        "http_server": "Server",
+        "insecure_http": true,
+        "scan_ time": 1700852762.257664
+    },
+    "indeed.com": {
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "scan_ time": 1700852764.536629
     },
     "instagram.com": {
-        "ipv4": [
-            " 157.240.254.17",
-            " 31.13.71.17",
-            " 157.240.249.17",
-            " 157.240.229.17",
-            " 31.13.80.17",
-            " 157.240.22.17",
-            " 31.13.66.17",
-            " 157.240.14.17",
-            " 157.240.15.17",
-            " 157.240.245.17",
-            " 157.240.0.17",
-            " 31.13.88.17"
-        ],
-        "ipv6": [
-            "2a03:2880:f275:e9:face:b00c:0:4420",
-            "2a03:2880:f203:e5:face:b00c:0:4420",
-            "2a03:2880:f212:e5:face:b00c:0:4420",
-            "2a03:2880:f203:1e6:face:b00c:0:4420",
-            "2a03:2880:f20e:e5:face:b00c:0:4420",
-            "2a03:2880:f231:e5:face:b00c:0:4420",
-            "2a03:2880:f22c:1e5:face:b00c:0:4420",
-            "2a03:2880:f20c:1e5:face:b00c:0:4420",
-            "2a03:2880:f272:e9:face:b00c:0:4420",
-            "2a03:2880:f277:e2:face:b00c:0:4420",
-            "2a03:2880:f277:1e8:face:b00c:0:4420",
-            "2a03:2880:f275:1e9:face:b00c:0:4420",
-            "2a03:2880:f211:1e6:face:b00c:0:4420"
-        ],
-        "scan_ time": 1700802766.036279
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852763.080822
     },
-    "it.eecs.northwestern.edu": {
-        "ipv4": [
-            " 129.105.5.14"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802901.419167
+    "investopedia.com": {
+        "http_server": "Varnish",
+        "insecure_http": true,
+        "scan_ time": 1700852788.528948
     },
-    "kellogg.northwestern.edu": {
-        "ipv4": [
-            " 165.124.147.15"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802856.258484
+    "irs.gov": {
+        "http_server": "BigIP",
+        "insecure_http": true,
+        "scan_ time": 1700852777.396566
     },
-    "kli.org": {
-        "ipv4": [
-            " 104.21.4.169",
-            " 172.67.132.7",
-            " 172.67.132.72",
-            " 104.21.4.16",
-            " 172.64.80.",
-            " 188.114.97.1",
-            " 188.114.96.",
-            " 188.114.96.1",
-            " 188.114.97.",
-            " 188.114.97.3"
-        ],
-        "ipv6": [
-            "2606:4700:3033::6815:4a9",
-            "2606:4700:3035::ac43:8448",
-            "2606:4700:130:436c:6f75:6466:6c61:7265",
-            "2a06:98c1:3121::1",
-            "2a06:98c1:3120::1",
-            "2a06:98c1:3120::3",
-            "2a06:98c1:3121::3"
-        ],
-        "scan_ time": 1700803106.859349
+    "linkedin.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852764.0230458
     },
-    "mccormick.northwestern.edu": {
-        "ipv4": [
-            " 165.124.149.2"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802830.503396
+    "live.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852780.100412
     },
-    "northwestern.edu": {
-        "ipv4": [
-            " 129.105.136.4"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802801.957914
+    "lowes.com": {
+        "http_server": "AkamaiGHost",
+        "insecure_http": true,
+        "scan_ time": 1700852777.654571
+    },
+    "macys.com": {
+        "http_server": "AkamaiGHost",
+        "insecure_http": true,
+        "scan_ time": 1700852781.110946
+    },
+    "mail.yahoo.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852777.9486852
+    },
+    "mapquest.com": {
+        "http_server": "Apache/2.4.49 (Unix) OpenSSL/1.1.1l",
+        "insecure_http": true,
+        "scan_ time": 1700852768.237793
+    },
+    "mayoclinic.org": {
+        "http_server": "BigIP",
+        "insecure_http": true,
+        "scan_ time": 1700852769.1400378
+    },
+    "medicalnewstoday.com": {
+        "http_server": "AmazonS3",
+        "insecure_http": true,
+        "scan_ time": 1700852770.2011662
+    },
+    "merriam-webster.com": {
+        "http_server": "awselb/2.0",
+        "insecure_http": true,
+        "scan_ time": 1700852765.700298
+    },
+    "microsoft.com": {
+        "http_server": "Kestrel",
+        "insecure_http": true,
+        "scan_ time": 1700852765.991586
+    },
+    "msn.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852769.89951
+    },
+    "netflix.com": {
+        "http_server": "nq_website_nonmember-prod-release ab64cc9e-e84a-4424-ad3e-6448eedd5225",
+        "insecure_http": true,
+        "scan_ time": 1700852767.6161559
+    },
+    "nih.gov": {
+        "http_server": "BigIP",
+        "insecure_http": true,
+        "scan_ time": 1700852767.159231
+    },
+    "npr.org": {
+        "http_server": "AmazonS3",
+        "insecure_http": true,
+        "scan_ time": 1700852789.981185
+    },
+    "nytimes.com": {
+        "http_server": "Varnish",
+        "insecure_http": true,
+        "scan_ time": 1700852765.32222
+    },
+    "office.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852779.0394938
+    },
+    "paypal.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852779.482923
     },
     "pinterest.com": {
-        "ipv4": [
-            " 151.101.192.84",
-            " 151.101.0.84",
-            " 151.101.128.84",
-            " 151.101.64.8",
-            " 151.101.64.84",
-            " 151.101.192.8",
-            " 151.101.128.8",
-            " 151.101.0.8"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802729.169451
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852762.595027
     },
-    "pmichaud.com": {
-        "ipv4": [
-            " 23.254.203.24"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700803084.3799832
+    "play.google.com": {
+        "http_server": "ESF",
+        "insecure_http": true,
+        "scan_ time": 1700852764.166229
+    },
+    "quizlet.com": {
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "scan_ time": 1700852767.835423
+    },
+    "quora.com": {
+        "http_server": "nginx",
+        "insecure_http": true,
+        "scan_ time": 1700852766.903435
     },
     "reddit.com": {
-        "ipv4": [
-            " 151.101.193.140",
-            " 151.101.129.140",
-            " 151.101.1.140",
-            " 151.101.65.14",
-            " 151.101.65.140",
-            " 151.101.193.14",
-            " 151.101.1.14",
-            " 151.101.129.14"
-        ],
-        "ipv6": [
-            "2a04:4e42:400::396",
-            "2a04:4e42::396",
-            "2a04:4e42:600::396",
-            "2a04:4e42:200::396"
-        ],
-        "scan_ time": 1700802675.951293
+        "http_server": "snooserv",
+        "insecure_http": true,
+        "scan_ time": 1700852762.1508842
     },
-    "spacejam.com": {
-        "ipv4": [
-            " 99.83.180.228",
-            " 75.2.104.22",
-            " 75.2.104.223",
-            " 99.83.180.22"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700803064.848348
+    "retailmenot.com": {
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "scan_ time": 1700852779.1662028
     },
-    "stevetarzia.com": {
-        "ipv4": [
-            " 3.143.61.24"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802959.5577059
+    "roblox.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852790.236248
+    },
+    "rottentomatoes.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852767.460526
+    },
+    "spotify.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852776.156427
+    },
+    "steamcommunity.com": {
+        "http_server": "nginx",
+        "insecure_http": true,
+        "scan_ time": 1700852788.917734
+    },
+    "steampowered.com": {
+        "http_server": "nginx",
+        "insecure_http": true,
+        "scan_ time": 1700852778.294438
+    },
+    "target.com": {
+        "http_server": "Varnish",
+        "insecure_http": true,
+        "scan_ time": 1700852766.641552
+    },
+    "techradar.com": {
+        "http_server": "Varnish",
+        "insecure_http": true,
+        "scan_ time": 1700852788.0981781
+    },
+    "theguardian.com": {
+        "http_server": "Varnish",
+        "insecure_http": true,
+        "scan_ time": 1700852769.507243
     },
     "tripadvisor.com": {
-        "ipv4": [
-            " 151.101.2.28",
-            " 151.101.130.28",
-            " 151.101.194.28",
-            " 151.101.66.2",
-            " 151.101.66.28",
-            " 151.101.194.2",
-            " 151.101.130.2",
-            " 151.101.2.2"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802746.3723578
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852762.6846871
     },
     "twitter.com": {
-        "ipv4": [
-            " 104.244.42.",
-            " 104.244.42.193",
-            " 104.244.42.129",
-            " 104.244.42.1",
-            " 104.244.42.6",
-            " 104.244.42.12",
-            " 104.244.42.65",
-            " 104.244.42.19"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802602.298838
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852761.335003
     },
-    "uchicago.edu": {
-        "ipv4": [
-            " 3.215.148.8"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802921.5533829
+    "urbandictionary.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852770.30185
     },
-    "users.cs.northwestern.edu": {
-        "ipv4": [
-            " 165.124.180.2"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802880.110133
+    "usatoday.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852770.032463
+    },
+    "usnews.com": {
+        "http_server": null,
+        "insecure_http": false,
+        "scan_ time": 1700852770.426972
+    },
+    "usps.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852778.750025
     },
     "walmart.com": {
-        "ipv4": [
-            " 23.203.41.11",
-            " 23.54.69.22",
-            " 184.50.205.20",
-            " 23.219.48.14",
-            " 23.53.216.17",
-            " 23.55.201.23",
-            " 23.197.108.19",
-            " 23.38.200.13",
-            " 69.192.160.12",
-            " 23.59.182.17",
-            " 2.23.197.18",
-            " 23.59.16.13",
-            " 23.198.32.17"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802784.0035489
+        "http_server": "AkamaiGHost",
+        "insecure_http": true,
+        "scan_ time": 1700852763.210222
+    },
+    "washingtonpost.com": {
+        "http_server": "AkamaiGHost",
+        "insecure_http": true,
+        "scan_ time": 1700852778.594748
+    },
+    "wayfair.com": {
+        "http_server": "fastly",
+        "insecure_http": true,
+        "scan_ time": 1700852780.3774168
+    },
+    "weather.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852767.968914
+    },
+    "webmd.com": {
+        "http_server": "Apache",
+        "insecure_http": true,
+        "scan_ time": 1700852764.886539
+    },
+    "wellsfargo.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852789.838889
+    },
+    "wikihow.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852791.606574
+    },
+    "wiktionary.org": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852779.294477
+    },
+    "wowhead.com": {
+        "http_server": "CloudFront",
+        "insecure_http": true,
+        "scan_ time": 1700852791.813159
+    },
+    "xfinity.com": {
+        "http_server": "BigIP",
+        "insecure_http": true,
+        "scan_ time": 1700852787.596304
+    },
+    "yahoo.com": {
+        "http_server": "ATS",
+        "insecure_http": true,
+        "scan_ time": 1700852769.6082509
+    },
+    "yellowpages.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852788.625785
     },
     "yelp.com": {
-        "ipv4": [
-            " 146.75.80.11",
-            " 199.232.36.11",
-            " 146.75.76.11",
-            " 151.101.124.11",
-            " 146.75.36.11",
-            " 151.101.208.11",
-            " 151.101.36.11",
-            " 151.101.68.11",
-            " 146.75.120.11"
-        ],
-        "ipv6": [],
-        "scan_ time": 1700802659.310415
+        "http_server": null,
+        "insecure_http": true,
+        "scan_ time": 1700852761.934635
     },
     "youtube.com": {
-        "ipv4": [
-            " 142.250.190.7",
-            " 142.250.80.11",
-            " 142.250.191.14",
-            " 142.250.190.1",
-            " 172.217.1.11",
-            " 74.125.196.93",
-            " 74.125.196.136",
-            " 74.125.196.91",
-            " 74.125.196.19",
-            " 142.251.40.14",
-            " 142.250.138.91",
-            " 142.250.138.93",
-            " 142.250.138.136",
-            " 142.250.138.19",
-            " 142.251.220.20",
-            " 142.251.40.17",
-            " 173.194.73.190",
-            " 173.194.73.93",
-            " 173.194.73.91",
-            " 173.194.73.13",
-            " 108.177.14.91",
-            " 108.177.14.93",
-            " 108.177.14.190",
-            " 108.177.14.13",
-            " 172.217.4.7",
-            " 142.250.181.20",
-            " 216.58.214.17",
-            " 172.217.12.1"
-        ],
-        "ipv6": [
-            "2607:f8b0:4009:80b::200e",
-            "2607:f8b0:4009:819::200e",
-            "2607:f8b0:4006:80d::200e",
-            "2607:f8b0:4009:806::200e",
-            "2607:f8b0:4009:814::200e",
-            "2607:f8b0:4009:808::200e",
-            "2607:f8b0:4009:801::200e",
-            "2607:f8b0:4009:80a::200e",
-            "2607:f8b0:400c:c36::5d",
-            "2607:f8b0:400c:c36::88",
-            "2607:f8b0:400c:c36::5b",
-            "2607:f8b0:400c:c36::be",
-            "2607:f8b0:4006:820::200e",
-            "2607:f8b0:4023:1006::88",
-            "2607:f8b0:4023:1006::be",
-            "2607:f8b0:4023:1006::5b",
-            "2607:f8b0:4023:1006::5d",
-            "2404:6800:4017:802::200e",
-            "2607:f8b0:4006:822::200e",
-            "2607:f8b0:4006:821::200e",
-            "2a00:1450:4010:c1c::be",
-            "2a00:1450:4010:c1c::5d",
-            "2a00:1450:4010:c1c::5b",
-            "2a00:1450:4010:c1c::88",
-            "2a00:1450:4010:c0d::be",
-            "2a00:1450:4010:c0d::5d",
-            "2a00:1450:4010:c0d::5b",
-            "2a00:1450:4010:c0d::88",
-            "2a00:1450:4005:800::200e",
-            "2a00:1450:4007:80e::200e",
-            "2607:f8b0:4025:815::200e"
-        ],
-        "scan_ time": 1700802569.074979
+        "http_server": "ESF",
+        "insecure_http": true,
+        "scan_ time": 1700852761.011075
+    },
+    "zillow.com": {
+        "http_server": "AmazonS3",
+        "insecure_http": true,
+        "scan_ time": 1700852768.9836411
     }
 }
