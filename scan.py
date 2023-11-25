@@ -64,7 +64,7 @@ def http_helper(name, counter=0):
             name = name[8:]
         elif "http" in name:
             name = name[7:]
-        print("name", name, "counter", counter)
+        # print("name", name, "counter", counter)
 
         if secure:
             connect = http.client.HTTPSConnection(name, timeout=5)
@@ -110,7 +110,7 @@ def http_scanner(name):
         response = connect.getresponse()
         # print("response", response.status, response.reason)
         if str(response.status)[0:2] == '30':
-            print("NAME", name)
+            # print("NAME", name)
             msg = response.msg.as_string()
             # print("msg", msg)
             loc = msg.find("ocation:")
@@ -126,7 +126,7 @@ def http_scanner(name):
                 #print(line)
                 if "Server:" in line:
                     server = line[line.find('Server:') + 8 :].strip()
-                    print("Name", name, line)
+                    # print("Name", name, line)
                     break
 
             # if "Location" in line:
@@ -140,7 +140,7 @@ def http_scanner(name):
         print("Insecure", name)
         insecure = False
     
-    if response:
+    # if response:
         # if response.status[0:2] == '30':
         #     loc = response.msg.find("Location:")
         #     if loc != -1:
@@ -155,7 +155,7 @@ def http_scanner(name):
         #             new
         #     sec = True if response
             
-        print("Name", name, "Status", response.status, response.reason)
+        # print("Name", name, "Status", response.status, response.reason)
     results[name]['http_server'] = server
     results[name]['insecure_http'] = insecure
     results[name]['redirect'] = redirect

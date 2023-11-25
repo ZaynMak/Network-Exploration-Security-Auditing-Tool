@@ -1,170 +1,602 @@
 {
+    "accuweather.com": {
+        "http_server": null,
+        "insecure_http": false,
+        "redirect": false,
+        "scan_ time": 1700883117.9787369
+    },
+    "allrecipes.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883103.4777029
+    },
     "amazon.com": {
         "http_server": "Server",
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875038.576294
+        "scan_ time": 1700883066.445882
     },
-    "asee.org": {
+    "aol.com": {
+        "http_server": "ATS",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883106.734613
+    },
+    "apartments.com": {
         "http_server": "Microsoft-IIS/10.0",
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875054.365694
+        "scan_ time": 1700883131.7813618
     },
-    "auditoryneuroscience.com": {
-        "http_server": "Apache/2.4.58 (Ubuntu)",
+    "apple.com": {
+        "http_server": "Apple",
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875052.8290932
+        "scan_ time": 1700883077.738019
     },
-    "clocktab.com": {
+    "bankofamerica.com": {
+        "http_server": "Oops",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883133.136283
+    },
+    "bbb.org": {
         "http_server": "cloudflare",
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875052.6782029
+        "scan_ time": 1700883133.868311
+    },
+    "bestbuy.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883090.29893
+    },
+    "bleacherreport.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883117.151947
+    },
+    "books.google.com": {
+        "http_server": null,
+        "insecure_http": false,
+        "redirect": false,
+        "scan_ time": 1700883133.010422
+    },
+    "britannica.com": {
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883088.715795
+    },
+    "businessinsider.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883089.113301
+    },
+    "ca.gov": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883116.47046
+    },
+    "cbssports.com": {
+        "http_server": "ContentServer",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883115.9234219
+    },
+    "chase.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883130.239585
+    },
+    "cnet.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883104.608654
+    },
+    "cnn.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883079.415228
+    },
+    "craigslist.org": {
+        "http_server": null,
+        "insecure_http": false,
+        "redirect": false,
+        "scan_ time": 1700883075.829631
+    },
+    "dictionary.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883089.469165
+    },
+    "ebay.com": {
+        "http_server": "ebay-proxy-server",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883075.96112
     },
     "en.wikipedia.org": {
         "http_server": null,
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875037.8210418
+        "scan_ time": 1700883065.674953
+    },
+    "espn.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883077.915329
+    },
+    "etsy.com": {
+        "http_server": "DataDome",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883077.4528341
+    },
+    "expedia.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883134.8739321
     },
     "facebook.com": {
         "http_server": "proxygen-bolt",
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875038.329064
+        "scan_ time": 1700883066.1809669
     },
     "fandom.com": {
         "http_server": null,
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875041.884692
+        "scan_ time": 1700883069.224919
     },
-    "gradeinflation.com": {
-        "http_server": "nginx",
+    "fb.com": {
+        "http_server": "proxygen-bolt",
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875055.0487921
+        "scan_ time": 1700883078.799776
     },
-    "illinois.edu": {
-        "http_server": "Apache/2.2.15 (Red Hat) mod_ssl/2.2.15 OpenSSL/1.0.1e-fips",
+    "finance.yahoo.com": {
+        "http_server": null,
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875052.326188
+        "scan_ time": 1700883104.8470669
+    },
+    "foodnetwork.com": {
+        "http_server": "Apache",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883115.1680808
+    },
+    "forbes.com": {
+        "http_server": "rhino-core-shield",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883104.318753
+    },
+    "foxnews.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883102.9398642
+    },
+    "gamepedia.com": {
+        "http_server": null,
+        "insecure_http": false,
+        "redirect": false,
+        "scan_ time": 1700883079.954818
+    },
+    "genius.com": {
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883103.195938
+    },
+    "glassdoor.com": {
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "redirect": false,
+        "scan_ time": 1700883104.242775
+    },
+    "go.com": {
+        "http_server": "CloudFront",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883123.4627578
+    },
+    "google.com": {
+        "http_server": "gws",
+        "insecure_http": true,
+        "redirect": false,
+        "scan_ time": 1700883079.246432
+    },
+    "groupon.com": {
+        "http_server": "Groupon",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883124.0306182
+    },
+    "healthline.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883077.144344
+    },
+    "homedepot.com": {
+        "http_server": "nginx/1.25.2",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883081.04784
+    },
+    "huffpost.com": {
+        "http_server": "CloudFront",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883132.6474729
+    },
+    "hulu.com": {
+        "http_server": "envoy",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883115.470639
+    },
+    "ign.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883135.623946
     },
     "imdb.com": {
         "http_server": "Server",
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875040.183839
+        "scan_ time": 1700883067.864919
+    },
+    "indeed.com": {
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "redirect": false,
+        "scan_ time": 1700883077.674486
     },
     "instagram.com": {
         "http_server": "proxygen-bolt",
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875048.061249
+        "scan_ time": 1700883075.356729
     },
-    "it.eecs.northwestern.edu": {
-        "http_server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k",
+    "investopedia.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883129.2737129
+    },
+    "irs.gov": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883105.6202261
+    },
+    "linkedin.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883076.716906
+    },
+    "live.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883115.8135371
+    },
+    "lowes.com": {
+        "http_server": "AkamaiGHost",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883106.204084
+    },
+    "macys.com": {
+        "http_server": "AkamaiGHost",
         "insecure_http": true,
         "redirect": false,
-        "scan_ time": 1700875051.836218
+        "scan_ time": 1700883117.452868
     },
-    "kellogg.northwestern.edu": {
-        "http_server": "Microsoft-IIS/10.0",
+    "mail.yahoo.com": {
+        "http_server": null,
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875050.2763221
+        "scan_ time": 1700883106.579966
     },
-    "kli.org": {
-        "http_server": "cloudflare",
+    "mapquest.com": {
+        "http_server": "Apache/2.4.49 (Unix) OpenSSL/1.1.1l",
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875055.873735
+        "scan_ time": 1700883088.2161531
     },
-    "mccormick.northwestern.edu": {
-        "http_server": "Apache/2.4.41 (Ubuntu)",
+    "mayoclinic.org": {
+        "http_server": "Google Frontend",
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875050.054952
+        "scan_ time": 1700883089.981765
     },
-    "northwestern.edu": {
-        "http_server": "Apache",
+    "medicalnewstoday.com": {
+        "http_server": null,
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875048.545503
+        "scan_ time": 1700883097.2807958
+    },
+    "merriam-webster.com": {
+        "http_server": "nginx",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883079.621881
+    },
+    "microsoft.com": {
+        "http_server": "Kestrel",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883080.067798
+    },
+    "msn.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883096.664764
+    },
+    "netflix.com": {
+        "http_server": "nq_website_nonmember-prod-release 1007cfed-74bf-4f53-9084-08b3597d242f",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883087.081374
+    },
+    "nih.gov": {
+        "http_server": null,
+        "insecure_http": false,
+        "redirect": false,
+        "scan_ time": 1700883086.699466
+    },
+    "npr.org": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883131.385501
+    },
+    "nytimes.com": {
+        "http_server": "nginx",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883078.967335
+    },
+    "office.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883113.938312
+    },
+    "paypal.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883114.7308888
     },
     "pinterest.com": {
         "http_server": null,
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875042.0240982
+        "scan_ time": 1700883069.381995
     },
-    "pmichaud.com": {
-        "http_server": "Apache",
-        "insecure_http": true,
+    "play.google.com": {
+        "http_server": null,
+        "insecure_http": false,
         "redirect": false,
-        "scan_ time": 1700875055.719439
+        "scan_ time": 1700883077.063136
+    },
+    "quizlet.com": {
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883087.873303
+    },
+    "quora.com": {
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883086.220417
     },
     "reddit.com": {
         "http_server": "snooserv",
         "insecure_http": true,
         "redirect": false,
-        "scan_ time": 1700875040.139287
+        "scan_ time": 1700883067.805274
     },
-    "spacejam.com": {
-        "http_server": "Apache/2.4.57 () OpenSSL/1.0.2k-fips",
+    "retailmenot.com": {
+        "http_server": null,
+        "insecure_http": false,
+        "redirect": false,
+        "scan_ time": 1700883114.1417758
+    },
+    "roblox.com": {
+        "http_server": null,
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875055.2674189
+        "scan_ time": 1700883132.275219
     },
-    "stevetarzia.com": {
-        "http_server": "Apache/2.4.58 () OpenSSL/1.0.2k-fips PHP/5.4.16",
+    "rottentomatoes.com": {
+        "http_server": null,
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875052.4997818
+        "scan_ time": 1700883086.8019252
+    },
+    "spotify.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883103.9770281
+    },
+    "steamcommunity.com": {
+        "http_server": "nginx",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883129.918685
+    },
+    "steampowered.com": {
+        "http_server": "nginx",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883107.8511639
+    },
+    "target.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883080.6865
+    },
+    "techradar.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883123.687864
+    },
+    "theguardian.com": {
+        "http_server": "Varnish",
+        "insecure_http": true,
+        "redirect": false,
+        "scan_ time": 1700883095.7937238
     },
     "tripadvisor.com": {
         "http_server": "Varnish",
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875042.4365172
+        "scan_ time": 1700883069.840232
     },
     "twitter.com": {
         "http_server": null,
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875038.0542169
+        "scan_ time": 1700883065.912992
     },
-    "uchicago.edu": {
+    "urbandictionary.com": {
+        "http_server": "Google Frontend",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883097.613311
+    },
+    "usatoday.com": {
         "http_server": null,
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875051.877525
+        "scan_ time": 1700883096.981313
     },
-    "users.cs.northwestern.edu": {
-        "http_server": "Apache",
+    "usnews.com": {
+        "http_server": null,
+        "insecure_http": false,
+        "redirect": false,
+        "scan_ time": 1700883097.8877661
+    },
+    "usps.com": {
+        "http_server": "ECAcc (cmc/FAC8)",
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875051.691995
+        "scan_ time": 1700883113.566436
     },
     "walmart.com": {
         "http_server": null,
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875048.313629
+        "scan_ time": 1700883075.62026
+    },
+    "washingtonpost.com": {
+        "http_server": "AkamaiGHost",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883108.370775
+    },
+    "wayfair.com": {
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883116.136482
+    },
+    "weather.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883088.0153868
+    },
+    "webmd.com": {
+        "http_server": "cloudflare",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883078.413415
+    },
+    "wellsfargo.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883130.7097468
+    },
+    "wikihow.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883135.230459
+    },
+    "wiktionary.org": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883114.2270951
+    },
+    "wowhead.com": {
+        "http_server": "nginx",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883135.83039
+    },
+    "xfinity.com": {
+        "http_server": null,
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883123.088667
+    },
+    "yahoo.com": {
+        "http_server": "ATS",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883096.2935371
+    },
+    "yellowpages.com": {
+        "http_server": "nginx",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883129.542876
     },
     "yelp.com": {
         "http_server": null,
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875039.422858
+        "scan_ time": 1700883066.982187
     },
     "youtube.com": {
         "http_server": "ESF",
         "insecure_http": true,
         "redirect": true,
-        "scan_ time": 1700875037.454935
+        "scan_ time": 1700883065.294956
+    },
+    "zillow.com": {
+        "http_server": "CloudFront",
+        "insecure_http": true,
+        "redirect": true,
+        "scan_ time": 1700883089.6588511
     }
 }
