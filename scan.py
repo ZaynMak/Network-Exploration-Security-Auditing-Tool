@@ -61,54 +61,73 @@ def http_helper(name, counter=0):
         secure = False
         if "https" in name:
             secure = True
+            name = name[8:]
+        elif "http" in name:
+            name = name[7:]
+        print("name", name, "counter", counter)
 
         if secure:
             connect = http.client.HTTPSConnection(name, timeout=5)
         else:
             connect = http.client.HTTPConnection(name, timeout=5)
-        
+        # print("before request")
         try:
             connect.request("GET", "/", headers={"Host": name})
+            # print("after request")
             response = connect.getresponse()
-
-            
-                print('Redirect: ', name, line)
-                
-                http_helper(name, True, counter+1)
-                # server 5.4
-        except:
-            return False
+            print("after response", response.status, response.reason)
+            if str(response.status)[0:2] == '30':
+                msg = response.msg.as_string()
+                loc = msg.find("ocation:")
+                start = msg[loc + 9:]
+                end = start.find('/\n')
+                if end == -1:
+                    end = start.find('\n')
+                new_name = start[:end]
+                print("within helper", new_name, counter)
+                return http_helper(new_name, counter+1)
+            else:
+                return response, secure
+        except Exception as e:
+            print("ERROR: ", e)
+            return None, secure
         
             # if response.status[0:2] == '30':
             # print("Name", name, "Status", response.status, response.reason)
+    else:
+        return None, False
     
 
 def http_scanner(name):
     server = None
     insecure = True
     redirect = False
+    new_response = None
 
-    
-    
     connect = http.client.HTTPConnection(name, timeout=5)
     try:
         connect.request("GET", "/", headers={"Host": name})
         response = connect.getresponse()
-        #print("Response", response.msg)
-        if response.status[0:2] == '30':
+        # print("response", response.status, response.reason)
+        if str(response.status)[0:2] == '30':
+            print("NAME", name)
             msg = response.msg.as_string()
-            loc = msg.find("Location:")
-            start = msg[loc + 10:]
-            end = start.find('\n')
+            # print("msg", msg)
+            loc = msg.find("ocation:")
+            start = msg[loc + 9:]
+            end = start.find('/\n')
             new_name = start[:end]
-            new_response = http_helper(new_name)
-        
-        for line in response.msg.as_string().splitlines():
-            #print(line)
-            if "Server:" in line:
-                server = line[line.find('Server:') + 8 :].strip()
-                print("Name", name, line)
-                break
+            print("before helper", new_name)
+            new_response, redirect = http_helper(new_name)
+        if new_response:
+            response = new_response
+        if response:
+            for line in response.msg.as_string().splitlines():
+                #print(line)
+                if "Server:" in line:
+                    server = line[line.find('Server:') + 8 :].strip()
+                    print("Name", name, line)
+                    break
 
             # if "Location" in line:
             #     if counter < 10:
@@ -116,28 +135,30 @@ def http_scanner(name):
                     
             #         http_helper(name, True, counter+1)
             # server 5.4
-    except:
+    except Exception as e:
+        print("ERROR handler: ", e)
         print("Insecure", name)
         insecure = False
     
-    if insecure:
-        if response.status[0:2] == '30':
-            loc = response.msg.find("Location:")
-            if loc != -1:
-                msg = response.msg[loc + 10:]
-                new_name_loc = msg.find("http")
-                if "https" in msg
+    if response:
+        # if response.status[0:2] == '30':
+        #     loc = response.msg.find("Location:")
+        #     if loc != -1:
+        #         msg = response.msg[loc + 10:]
+        #         new_name_loc = msg.find("http")
+        #         if "https" in msg
 
-                if sec_loc == -1:
-                    sec = False
-                else:
-                    sec = True
-                    new
-            sec = True if response
+        #         if sec_loc == -1:
+        #             sec = False
+        #         else:
+        #             sec = True
+        #             new
+        #     sec = True if response
             
-            print("Name", name, "Status", response.status, response.reason)
+        print("Name", name, "Status", response.status, response.reason)
     results[name]['http_server'] = server
     results[name]['insecure_http'] = insecure
+    results[name]['redirect'] = redirect
 
     #response.status response.reason i.e 404 not found
 if __name__ == "__main__":
