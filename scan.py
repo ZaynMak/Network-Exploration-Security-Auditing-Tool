@@ -116,6 +116,8 @@ def http_scanner(name):
             loc = msg.find("ocation:")
             start = msg[loc + 9:]
             end = start.find('/\n')
+            if end == -1:
+                end = start.find('\n')
             new_name = start[:end]
             print("before helper", new_name)
             new_response, redirect = http_helper(new_name)
