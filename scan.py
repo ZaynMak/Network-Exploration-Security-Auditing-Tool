@@ -1,9 +1,12 @@
-import time, sys, json, subprocess, http.client
+import time, sys, json, subprocess, http.client, socket
+import maxminddb
 
 results = {}
 
 check =['SSLv2', 'SSLv3', 'TLSv1.0', 'TLSv1.1', 'TLSv1.2', 'TLSv1.3']
 def main():
+    timer = time.time()
+
     file_in = sys.argv[1]
     file_out = sys.argv[2]
 
@@ -13,10 +16,12 @@ def main():
         line = line.strip()
         results[line]={'scan_ time': time.time()}
         # scanner(line)
-        # scanner(line, 'AAAA')
+        scanner(line, 'AAAA')
         # http_scanner(line)
         # tls_versions(line)
         # rdns(line)
+        # rtt(line) 
+        # geos(line)
         
         #call other scanners for each website
 
@@ -26,6 +31,7 @@ def main():
         f.close()
     
     read_file.close()
+    print("Time: ", time.time() - timer)
     
 def scanner(name, typ = 'A'):
     ipvs = []
@@ -41,23 +47,17 @@ def scanner(name, typ = 'A'):
         result = result[start:].strip()
 
         # find where the address is
-        if typ == 'A':
-            while result.find("Address:") != -1:
-                start = result.find("Address:") + 8
-                end = result.find("\n", start)
-                temp = result[start:end].strip()
-                if temp not in ipvs:
-                    ipvs.append(temp)
+        while result.find("Address:") != -1:
+            start = result.find("Address:") + 8
+            end = result.find("\n", start)
+            temp = result[start:end].strip()
+            if temp not in ipvs:
+                ipvs.append(temp)
                 result = result[end:].strip()
+
+        if typ == 'A': 
             results[name]['ipv4'] = ipvs
         else:
-            while result.find("address ") != -1:
-                start = result.find("address ") + 8
-                end = result.find("\n", start)
-                temp = result[start:end].strip()
-                if temp not in ipvs:
-                    ipvs.append(temp)
-                result = result[end:].strip()
             results[name]['ipv6'] = ipvs
 
 def http_helper(name, counter=0):
@@ -200,6 +200,69 @@ def rdns(name):
     results[name]['rdns'] = rdns
 
     #response.status response.reason i.e 404 not found
+
+def rtt(name):
+    rtts = []
+    for ipv4 in results[name]['ipv4']:
+        time1 = time.time()
+        try:
+            connect = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            connect.settimeout(2)
+            connect.connect((ipv4, 80))
+            connect.close()
+            time2 = time.time()
+            rtts.append(time2 - time1)
+        except Exception as e1:
+            print("ERROR rtt port 80: ", ipv4, e1)
+            time1 = time.time()
+            try:
+                connect2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                connect2.settimeout(2)
+                connect2.connect((ipv4, 20))
+                connect2.close()
+                time2 = time.time()
+                rtts.append(time2 - time1)
+            except Exception as e2:
+                print("ERROR rtt port 20: ", e2)
+                time1 = time.time()
+                try:
+                    connect3 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                    connect3.settimeout(2)
+                    connect3.connect((ipv4, 443))
+                    connect3.close()
+                    time2 = time.time()
+                    rtts.append(time2 - time1)
+                except Exception as e3:
+                    print("ERROR rtt port 443: ", e3)
+    
+    if rtts:
+        results[name]['rtt'] = [int(1000 * min(rtts)), int(1000 * max(rtts))]
+    else:
+        results[name]['rtt'] = None
+    
+def geos(name):
+    geos=[]
+    with maxminddb.open_database('GeoLite2-City.mmdb') as db:
+        for ipv4 in results[name]['ipv4']:
+            try:
+                loc = db.get(ipv4)
+            except:
+                continue
+            if "country" not in loc:
+                continue
+            country = loc['country']['names']['en']
+            if country == "United States":
+                if 'subdivisions' in loc:
+                    state = loc['subdivisions'][0]['names']['en']
+                    country = state + ", " + country
+            if 'city' in loc:
+                city = loc['city']['names']['en']
+                country = city + ", " + country
+            if country not in geos:
+                geos.append(country)
+    db.close()
+    results[name]['geo_locations'] = geos
+
 if __name__ == "__main__":
     main()
 
