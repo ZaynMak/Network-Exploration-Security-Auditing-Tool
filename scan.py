@@ -13,15 +13,24 @@ def main():
     
     read_file = open(file_in, "r")
     for line in read_file:
+        print(line)
         line = line.strip()
-        results[line]={'scan_ time': time.time()}
-        # scanner(line)
+        results[line]={'scan_time': time.time()}
+        scanner(line)
+        print('ipv4')
         scanner(line, 'AAAA')
-        # http_scanner(line)
-        # tls_versions(line)
-        # rdns(line)
-        # rtt(line) 
-        # geos(line)
+        print('ipv6')
+        http_scanner(line)
+        print('http')
+        #tls_versions(line)
+        print('tls')
+        rdns(line)
+        print('rdns')
+        rtt(line) 
+        print('rtt')
+        geos(line)
+        print('geos')
+
         
         #call other scanners for each website
 
@@ -31,7 +40,7 @@ def main():
         f.close()
     
     read_file.close()
-    print("Time: ", time.time() - timer)
+    #print("Time: ", time.time() - timer)
     
 def scanner(name, typ = 'A'):
     ipvs = []
@@ -54,6 +63,9 @@ def scanner(name, typ = 'A'):
             if temp not in ipvs:
                 ipvs.append(temp)
                 result = result[end:].strip()
+            result = result[end:].strip()
+            
+
 
         if typ == 'A': 
             results[name]['ipv4'] = ipvs
@@ -143,7 +155,7 @@ def http_scanner(name):
 
     results[name]['http_server'] = server
     results[name]['insecure_http'] = insecure
-    results[name]['redirect'] = redirect
+    results[name]['redirect_to_https'] = redirect
     results[name]['hsts'] = hsts
 
 
