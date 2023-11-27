@@ -62,7 +62,6 @@ def scanner(name, typ = 'A'):
             temp = result[start:end].strip()
             if temp not in ipvs:
                 ipvs.append(temp)
-                result = result[end:].strip()
             result = result[end:].strip()
             
 
@@ -246,11 +245,12 @@ def rtt(name):
                     rtts.append(time2 - time1)
                 except Exception as e3:
                     print("ERROR rtt port 443: ", e3)
+
     
     if rtts:
         results[name]['rtt'] = [int(1000 * min(rtts)), int(1000 * max(rtts))]
     else:
-        results[name]['rtt'] = None
+        results[name]['rtt'] = []
     
 def geos(name):
     geos=[]
