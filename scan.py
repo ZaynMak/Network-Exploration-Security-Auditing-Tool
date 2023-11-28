@@ -17,19 +17,19 @@ def main():
         line = line.strip()
         results[line]={'scan_time': time.time()}
         scanner(line)
-        print('ipv4')
+        # print('ipv4')
         scanner(line, 'AAAA')
         print('ipv6')
         http_scanner(line)
         print('http')
-        #tls_versions(line)
-        print('tls')
+        # tls_versions(line)
+        # print('tls')
         rdns(line)
-        print('rdns')
+        # print('rdns')
         rtt(line) 
-        print('rtt')
+        # print('rtt')
         geos(line)
-        print('geos')
+        # print('geos')
 
         
         #call other scanners for each website
@@ -152,6 +152,9 @@ def http_scanner(name):
         print("Insecure", name)
         insecure = False
 
+    if not redirect:
+        insecure = False
+    
     results[name]['http_server'] = server
     results[name]['insecure_http'] = insecure
     results[name]['redirect_to_https'] = redirect
@@ -229,12 +232,12 @@ def rtt(name):
             try:
                 connect2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 connect2.settimeout(2)
-                connect2.connect((ipv4, 20))
+                connect2.connect((ipv4, 22))
                 connect2.close()
                 time2 = time.time()
                 rtts.append(time2 - time1)
             except Exception as e2:
-                print("ERROR rtt port 20: ", e2)
+                print("ERROR rtt port 22: ", e2)
                 time1 = time.time()
                 try:
                     connect3 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -250,7 +253,7 @@ def rtt(name):
     if rtts:
         results[name]['rtt'] = [int(1000 * min(rtts)), int(1000 * max(rtts))]
     else:
-        results[name]['rtt'] = []
+        results[name]['rtt'] = None
     
 def geos(name):
     geos=[]
@@ -277,6 +280,3 @@ def geos(name):
 
 if __name__ == "__main__":
     main()
-
-#subprocess.check_output(["nslookup", "northwestern.edu", "8.8.8.8"], timeout = 2, stderr = subprocess.STDOUT).decode("utf-8")
-#'Server:\t\t8.8.8.8\nAddress:\t8.8.8.8#53\n\nNon-authoritative answer:\nName:\tnorthwestern.edu\nAddress: 129.105.136.48\n\n'

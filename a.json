@@ -8,11 +8,11 @@
         "insecure_http": true,
         "ipv4": [
             "205.251.242.103",
-            "54.239.28.8",
             "52.94.236.248",
-            "205.251.242.10",
+            "54.239.28.8",
             "54.239.28.85",
-            "52.94.236.24"
+            "52.94.236.24",
+            "205.251.242.10"
         ],
         "ipv6": [],
         "rdns": [
@@ -20,10 +20,10 @@
         ],
         "redirect_to_https": true,
         "rtt": [
-            28,
-            33
+            39,
+            50
         ],
-        "scan_time": 1701049348.904685
+        "scan_time": 1701126614.08171
     },
     "asee.org": {
         "geo_locations": [
@@ -39,10 +39,10 @@
         "rdns": [],
         "redirect_to_https": true,
         "rtt": [
-            103,
-            103
+            32,
+            32
         ],
-        "scan_time": 1701050027.3004081
+        "scan_time": 1701127211.956573
     },
     "auditoryneuroscience.com": {
         "geo_locations": [
@@ -59,8 +59,8 @@
             "cpsm11.cityu.edu.hk."
         ],
         "redirect_to_https": true,
-        "rtt": null,
-        "scan_time": 1701049991.315352
+        "rtt": [],
+        "scan_time": 1701127175.363543
     },
     "clocktab.com": {
         "geo_locations": [
@@ -80,10 +80,10 @@
         "rdns": [],
         "redirect_to_https": true,
         "rtt": [
-            9,
-            259
+            10,
+            15
         ],
-        "scan_time": 1701049968.3964841
+        "scan_time": 1701127154.950898
     },
     "en.wikipedia.org": {
         "geo_locations": [
@@ -91,21 +91,18 @@
             "Netherlands"
         ],
         "hsts": true,
-        "http_server": "mw1451.eqiad.wmnet",
+        "http_server": "mw1420.eqiad.wmnet",
         "insecure_http": true,
         "ipv4": [
             "208.80.154.22",
-            "198.35.26.9",
             "208.80.153.22",
             "185.15.59.22"
         ],
         "ipv6": [],
-        "rdns": [
-            "vl1201.lvs4009.wikimedia.org."
-        ],
+        "rdns": [],
         "redirect_to_https": true,
-        "rtt": null,
-        "scan_time": 1701049216.6248279
+        "rtt": [],
+        "scan_time": 1701126509.333248
     },
     "facebook.com": {
         "geo_locations": [
@@ -116,36 +113,37 @@
         "http_server": null,
         "insecure_http": true,
         "ipv4": [
-            "157.240.254.3",
             "157.240.249.3",
             "31.13.71.3",
             "157.240.229.3",
-            "157.240.241.3",
+            "157.240.254.3",
             "157.240.22.3",
-            "157.240.19.3",
             "31.13.66.3",
-            "157.240.0.3",
-            "31.13.80.3",
-            "31.13.65.3"
+            "157.240.15.3",
+            "157.240.245.3",
+            "157.240.253.3",
+            "157.240.252.3",
+            "31.13.88.3"
         ],
         "ipv6": [],
         "rdns": [
-            "whatsapp-chatd-msgr-edge-shv-02-ord5.facebook.com.",
             "whatsapp-chatd-msgr-edge-shv-01-ord5.facebook.com.",
             "edge-mqtt-shv-01-lga3.facebook.com.",
             "livestream-edgetee-upload-shv-02-iad3.facebook.com.",
-            "edge-fblite-tcp-p1-shv-02-lga3.facebook.com.",
+            "whatsapp-chatd-msgr-edge-shv-02-ord5.facebook.com.",
             "edge-extern-shv-01-iad3.facebook.com.",
-            "edge-video-shv-02-fra3.fbcdn.net.",
-            "edge-stun-shv-01-yyz1.facebook.com.",
-            "edge-mqtt-shv-01-atl3.facebook.com."
+            "whatsapp-chatd-msgr-edge-shv-03-sin6.facebook.com.",
+            "whatsapp-chatd-msgr-edge-shv-01-bos5.facebook.com.",
+            "intern-managed-client-shv-02-fra5.facebook.com.",
+            "edge-mqtt-shv-01-fra3.facebook.com.",
+            "whatsapp-chatd-msgr-edge-shv-02-atl3.facebook.com."
         ],
         "redirect_to_https": true,
         "rtt": [
-            9,
-            167
+            13,
+            241
         ],
-        "scan_time": 1701049291.996164
+        "scan_time": 1701126578.2556238
     },
     "fandom.com": {
         "geo_locations": [
@@ -164,10 +162,10 @@
         "rdns": [],
         "redirect_to_https": true,
         "rtt": [
-            6,
-            8
+            12,
+            19
         ],
-        "scan_time": 1701049490.5568519
+        "scan_time": 1701126740.9013839
     },
     "gradeinflation.com": {
         "geo_locations": [
@@ -182,8 +180,8 @@
         "ipv6": [],
         "rdns": [],
         "redirect_to_https": true,
-        "rtt": null,
-        "scan_time": 1701050054.648778
+        "rtt": [],
+        "scan_time": 1701127237.809547
     },
     "illinois.edu": {
         "geo_locations": [],
@@ -196,11 +194,8 @@
         "ipv6": [],
         "rdns": [],
         "redirect_to_https": true,
-        "rtt": [
-            79,
-            79
-        ],
-        "scan_time": 1701049907.292076
+        "rtt": [],
+        "scan_time": 1701127107.360594
     },
     "imdb.com": {
         "geo_locations": [
@@ -210,21 +205,21 @@
         "http_server": "Server",
         "insecure_http": true,
         "ipv4": [
-            "52.94.225.248",
-            "52.94.228.16",
             "52.94.237.74",
             "52.94.228.167",
+            "52.94.225.24",
+            "52.94.225.248",
             "52.94.237.7",
-            "52.94.225.24"
+            "52.94.228.16"
         ],
         "ipv6": [],
         "rdns": [],
         "redirect_to_https": true,
         "rtt": [
-            29,
+            33,
             36
         ],
-        "scan_time": 1701049447.2436638
+        "scan_time": 1701126699.562207
     },
     "instagram.com": {
         "geo_locations": [
@@ -235,44 +230,38 @@
         "http_server": null,
         "insecure_http": true,
         "ipv4": [
-            "157.240.249.17",
-            "31.13.71.17",
-            "157.240.229.17",
             "157.240.254.17",
-            "157.240.241.17",
+            "31.13.71.17",
+            "157.240.249.17",
+            "157.240.229.17",
             "157.240.22.17",
-            "157.240.19.17",
             "31.13.66.17",
-            "31.13.93.17",
             "157.240.15.17",
-            "157.240.252.17",
+            "157.240.245.17",
             "157.240.0.17",
-            "31.13.80.17",
-            "31.13.65.17"
+            "157.240.253.17",
+            "31.13.88.17"
         ],
         "ipv6": [],
         "rdns": [
-            "edge-mqtt-shv-01-ord5.facebook.com.",
-            "edge-secure-shv-01-lga3.facebook.com.",
-            "edge-star-shv-02-iad3.facebook.com.",
             "edge-video-shv-02-ord5.fbcdn.net.",
-            "edge-star-shv-02-lga3.facebook.com.",
+            "edge-secure-shv-01-lga3.facebook.com.",
+            "edge-mqtt-shv-01-ord5.facebook.com.",
+            "edge-star-shv-02-iad3.facebook.com.",
             "livestream-edgetee-ws-upload-staging-shv-01-sjc3.facebook.com.",
-            "anycast-control-ext-shv-01-dfw5.facebook.com.",
             "secure-edge-latest-shv-01-iad3.facebook.com.",
-            "anycast-control-ext-shv-02-dfw5.facebook.com.",
             "edge-msgr-latest-shv-03-sin6.facebook.com.",
-            "edge-dgw-shv-01-fra3.facebook.com.",
+            "edge-mqtt-shv-01-bos5.facebook.com.",
             "secure-edge-latest-shv-02-fra3.facebook.com.",
-            "edge-extern-shv-01-yyz1.facebook.com.",
-            "edge-secure-shv-01-atl3.facebook.com."
+            "edge-mqtt-shv-02-fra5.facebook.com.",
+            "edge-mqtt-latest-shv-02-atl3.facebook.com."
         ],
         "redirect_to_https": true,
         "rtt": [
-            7,
-            218
+            14,
+            301
         ],
-        "scan_time": 1701049595.089907
+        "scan_time": 1701126826.855227
     },
     "it.eecs.northwestern.edu": {
         "geo_locations": [
@@ -280,7 +269,7 @@
         ],
         "hsts": false,
         "http_server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k",
-        "insecure_http": true,
+        "insecure_http": false,
         "ipv4": [
             "129.105.5.14"
         ],
@@ -289,8 +278,8 @@
             "eecs-dc1.ece.northwestern.edu."
         ],
         "redirect_to_https": false,
-        "rtt": null,
-        "scan_time": 1701049828.7290921
+        "rtt": [],
+        "scan_time": 1701127044.947241
     },
     "kellogg.northwestern.edu": {
         "geo_locations": [
@@ -300,20 +289,15 @@
         "http_server": "Microsoft-IIS/10.0",
         "insecure_http": true,
         "ipv4": [
-            "165.124.147.15",
-            "165.124.129.7"
+            "165.124.147.15"
         ],
         "ipv6": [],
         "rdns": [
-            "dsspoc09suprd.ads.northwestern.edu.",
-            "chgk04-a.kellogg.northwestern.edu."
+            "dsspoc09suprd.ads.northwestern.edu."
         ],
         "redirect_to_https": true,
-        "rtt": [
-            57,
-            57
-        ],
-        "scan_time": 1701049755.210855
+        "rtt": [],
+        "scan_time": 1701126969.155395
     },
     "kli.org": {
         "geo_locations": [
@@ -328,17 +312,18 @@
             "172.64.80.",
             "172.67.132.72",
             "104.21.4.16",
-            "188.114.97.3",
+            "188.114.96.1",
+            "188.114.97.",
             "188.114.96.3"
         ],
         "ipv6": [],
         "rdns": [],
         "redirect_to_https": true,
         "rtt": [
-            8,
-            99
+            10,
+            22
         ],
-        "scan_time": 1701050153.747561
+        "scan_time": 1701127332.458694
     },
     "mccormick.northwestern.edu": {
         "geo_locations": [
@@ -353,8 +338,8 @@
         "ipv6": [],
         "rdns": [],
         "redirect_to_https": true,
-        "rtt": null,
-        "scan_time": 1701049711.863113
+        "rtt": [],
+        "scan_time": 1701126933.965662
     },
     "northwestern.edu": {
         "geo_locations": [
@@ -369,8 +354,8 @@
         "ipv6": [],
         "rdns": [],
         "redirect_to_https": true,
-        "rtt": null,
-        "scan_time": 1701049674.534903
+        "rtt": [],
+        "scan_time": 1701126892.427519
     },
     "pinterest.com": {
         "geo_locations": [
@@ -380,23 +365,23 @@
         "http_server": null,
         "insecure_http": true,
         "ipv4": [
-            "151.101.0.84",
             "151.101.192.84",
             "151.101.64.84",
-            "151.101.192.8",
             "151.101.128.84",
+            "151.101.0.8",
+            "151.101.0.84",
+            "151.101.192.8",
             "151.101.64.8",
-            "151.101.128.8",
-            "151.101.0.8"
+            "151.101.128.8"
         ],
         "ipv6": [],
         "rdns": [],
         "redirect_to_https": true,
         "rtt": [
-            7,
-            26
+            12,
+            21
         ],
-        "scan_time": 1701049519.234514
+        "scan_time": 1701126762.771229
     },
     "pmichaud.com": {
         "geo_locations": [
@@ -404,7 +389,7 @@
         ],
         "hsts": false,
         "http_server": "Apache",
-        "insecure_http": true,
+        "insecure_http": false,
         "ipv4": [
             "23.254.203.24"
         ],
@@ -413,8 +398,8 @@
             "client-23-254-203-24.hostwindsdns.com."
         ],
         "redirect_to_https": false,
-        "rtt": null,
-        "scan_time": 1701050125.7875168
+        "rtt": [],
+        "scan_time": 1701127300.9310038
     },
     "reddit.com": {
         "geo_locations": [
@@ -422,25 +407,25 @@
         ],
         "hsts": false,
         "http_server": "snooserv",
-        "insecure_http": true,
+        "insecure_http": false,
         "ipv4": [
             "151.101.1.140",
-            "151.101.129.140",
             "151.101.65.140",
+            "151.101.129.140",
             "151.101.193.14",
             "151.101.193.140",
-            "151.101.65.14",
             "151.101.129.14",
+            "151.101.65.14",
             "151.101.1.14"
         ],
         "ipv6": [],
         "rdns": [],
         "redirect_to_https": false,
         "rtt": [
-            7,
-            12
+            10,
+            28
         ],
-        "scan_time": 1701049419.621635
+        "scan_time": 1701126681.45553
     },
     "spacejam.com": {
         "geo_locations": [
@@ -450,9 +435,9 @@
         "http_server": "Apache/2.4.57 () OpenSSL/1.0.2k-fips",
         "insecure_http": true,
         "ipv4": [
-            "99.83.180.228",
             "75.2.104.223",
             "99.83.180.22",
+            "99.83.180.228",
             "75.2.104.22"
         ],
         "ipv6": [],
@@ -462,10 +447,10 @@
         ],
         "redirect_to_https": true,
         "rtt": [
-            8,
-            10
+            15,
+            22
         ],
-        "scan_time": 1701050087.645525
+        "scan_time": 1701127265.5025501
     },
     "stevetarzia.com": {
         "geo_locations": [
@@ -483,10 +468,10 @@
         ],
         "redirect_to_https": true,
         "rtt": [
-            16,
-            16
+            21,
+            21
         ],
-        "scan_time": 1701049939.7259488
+        "scan_time": 1701127132.364685
     },
     "tripadvisor.com": {
         "geo_locations": [
@@ -496,23 +481,23 @@
         "http_server": "Varnish",
         "insecure_http": true,
         "ipv4": [
-            "151.101.2.28",
-            "151.101.194.28",
             "151.101.66.28",
+            "151.101.194.28",
             "151.101.130.28",
+            "151.101.2.2",
+            "151.101.2.28",
             "151.101.194.2",
             "151.101.66.2",
-            "151.101.2.2",
             "151.101.130.2"
         ],
         "ipv6": [],
         "rdns": [],
         "redirect_to_https": true,
         "rtt": [
-            8,
-            13
+            13,
+            24
         ],
-        "scan_time": 1701049548.2883358
+        "scan_time": 1701126787.0061262
     },
     "twitter.com": {
         "geo_locations": [
@@ -522,23 +507,23 @@
         "http_server": "tsa_b",
         "insecure_http": true,
         "ipv4": [
-            "104.244.42.193",
-            "104.244.42.1",
-            "104.244.42.65",
-            "104.244.42.12",
-            "104.244.42.6",
-            "104.244.42.129",
+            "104.244.42.19",
             "104.244.42.",
-            "104.244.42.19"
+            "104.244.42.1",
+            "104.244.42.129",
+            "104.244.42.65",
+            "104.244.42.193",
+            "104.244.42.12",
+            "104.244.42.6"
         ],
         "ipv6": [],
         "rdns": [],
         "redirect_to_https": true,
         "rtt": [
-            70,
-            90
+            31,
+            38
         ],
-        "scan_time": 1701049257.665366
+        "scan_time": 1701126547.757805
     },
     "uchicago.edu": {
         "geo_locations": [
@@ -555,8 +540,8 @@
             "ec2-3-215-148-8.compute-1.amazonaws.com."
         ],
         "redirect_to_https": true,
-        "rtt": null,
-        "scan_time": 1701049868.547161
+        "rtt": [],
+        "scan_time": 1701127077.713315
     },
     "users.cs.northwestern.edu": {
         "geo_locations": [
@@ -570,11 +555,12 @@
         ],
         "ipv6": [],
         "rdns": [
+            "tech-1-vln-567.northwestern.edu.",
             "tech-5-vln-567.northwestern.edu."
         ],
         "redirect_to_https": true,
-        "rtt": null,
-        "scan_time": 1701049794.178219
+        "rtt": [],
+        "scan_time": 1701127007.278315
     },
     "walmart.com": {
         "geo_locations": [
@@ -584,53 +570,44 @@
         "http_server": null,
         "insecure_http": true,
         "ipv4": [
-            "23.197.37.20",
-            "23.197.108.19",
-            "23.59.16.13",
-            "104.126.112.17",
-            "23.220.128.12",
+            "23.203.41.11",
+            "104.76.100.24",
+            "23.54.40.17",
+            "23.38.77.19",
+            "96.6.168.13",
+            "23.220.132.13",
+            "2.22.41.18",
+            "88.221.148.14",
             "96.17.56.13",
-            "23.192.101.5",
-            "23.40.24.17",
-            "23.36.116.16",
-            "184.27.193.19",
-            "2.17.212.10",
-            "23.74.172.13",
-            "184.28.137.5",
-            "2.23.197.18"
+            "23.198.32.17"
         ],
         "ipv6": [],
         "rdns": [
-            "a23-197-37-20.deploy.static.akamaitechnologies.com.",
-            "a23-197-108-19.deploy.static.akamaitechnologies.com.",
-            "a23-59-16-13.deploy.static.akamaitechnologies.com.",
-            "a104-126-112-17.deploy.static.akamaitechnologies.com.",
-            "a23-220-128-12.deploy.static.akamaitechnologies.com.",
+            "a23-203-41-11.deploy.static.akamaitechnologies.com.",
+            "a104-76-100-24.deploy.static.akamaitechnologies.com.",
+            "a23-54-40-17.deploy.static.akamaitechnologies.com.",
+            "a23-38-77-19.deploy.static.akamaitechnologies.com.",
+            "a96-6-168-13.deploy.static.akamaitechnologies.com.",
+            "a23-220-132-13.deploy.static.akamaitechnologies.com.",
+            "a2-22-41-18.deploy.static.akamaitechnologies.com.",
+            "a88-221-148-14.deploy.static.akamaitechnologies.com.",
             "a96-17-56-13.deploy.static.akamaitechnologies.com.",
-            "a23-192-101-5.deploy.static.akamaitechnologies.com.",
-            "a23-40-24-17.deploy.static.akamaitechnologies.com.",
-            "a23-36-116-16.deploy.static.akamaitechnologies.com.",
-            "a184-27-193-19.deploy.static.akamaitechnologies.com.",
-            "a2-17-212-10.deploy.static.akamaitechnologies.com.",
-            "a23-74-172-13.deploy.static.akamaitechnologies.com.",
-            "a184-28-137-5.deploy.static.akamaitechnologies.com.",
-            "a2-23-197-18.deploy.static.akamaitechnologies.com."
+            "a23-198-32-17.deploy.static.akamaitechnologies.com."
         ],
         "redirect_to_https": true,
         "rtt": [
-            8,
-            137
+            13,
+            120
         ],
-        "scan_time": 1701049644.341024
+        "scan_time": 1701126865.370139
     },
     "yelp.com": {
         "geo_locations": [
             "Sweden",
             "New York, New York, United States",
-            "San Jose, California, United States",
-            "Sydney, Australia",
-            "Amsterdam, Netherlands",
             "Toronto, Canada",
+            "Newark, New Jersey, United States",
+            "Amsterdam, Netherlands",
             "Denver, Colorado, United States"
         ],
         "hsts": true,
@@ -639,96 +616,112 @@
         "ipv4": [
             "146.75.80.11",
             "199.232.36.11",
-            "146.75.36.11",
-            "146.75.76.11",
-            "146.75.28.11",
-            "151.101.40.11",
-            "146.75.104.11",
-            "151.101.28.11",
-            "151.101.36.11",
             "151.101.124.11",
+            "151.101.208.11",
+            "146.75.32.11",
+            "151.101.36.11",
             "151.101.68.11",
-            "146.75.32.11"
+            "146.75.76.11"
         ],
         "ipv6": [],
         "rdns": [],
         "redirect_to_https": true,
         "rtt": [
-            7,
-            202
+            11,
+            121
         ],
-        "scan_time": 1701049391.1771278
+        "scan_time": 1701126656.427254
     },
     "youtube.com": {
         "geo_locations": [
-            "United States"
+            "United States",
+            "Mountain View, California, United States"
         ],
         "hsts": true,
         "http_server": "ESF",
         "insecure_http": true,
         "ipv4": [
-            "142.250.191.23",
-            "172.217.1.11",
+            "172.217.2.4",
+            "142.250.190.4",
             "142.250.80.11",
-            "142.251.179.91",
-            "142.251.179.190",
-            "142.250.190.11",
-            "142.250.190.1",
             "142.250.191.11",
+            "142.250.190.1",
+            "172.217.1.11",
             "142.250.190.7",
-            "142.250.176.1",
-            "142.250.64.7",
-            "142.250.138.136",
-            "142.250.138.93",
-            "142.250.138.91",
-            "142.250.138.19",
-            "74.125.131.190",
-            "74.125.131.136",
-            "173.194.73.91",
-            "173.194.73.190",
-            "142.251.33.17",
-            "142.250.64.17",
-            "142.251.16.93",
+            "172.253.123.136",
+            "172.253.123.93",
+            "172.253.123.190",
+            "172.253.123.9",
+            "142.250.98.136",
+            "142.250.98.91",
+            "142.250.98.190",
+            "142.250.98.9",
+            "142.251.16.190",
             "142.251.16.91",
-            "142.251.167.91",
-            "142.251.167.190",
-            "142.251.167.136",
-            "142.251.167.9"
+            "142.251.16.136",
+            "142.251.16.9",
+            "142.251.116.136",
+            "142.251.116.190",
+            "142.251.116.91",
+            "142.251.116.9",
+            "216.58.200.1",
+            "142.250.65.20",
+            "173.194.73.190",
+            "173.194.73.91",
+            "173.194.73.93",
+            "173.194.73.13",
+            "108.177.14.190",
+            "108.177.14.136",
+            "108.177.14.91",
+            "108.177.14.9",
+            "142.250.190.11",
+            "172.217.12.1"
         ],
         "ipv6": [],
         "rdns": [
-            "iad23s25-in-f11.1e100.net.",
-            "yyz10s14-in-f11.1e100.net.",
+            "lga15s45-in-f4.1e100.net.",
+            "den16s03-in-f4.1e100.net.",
+            "ord37s32-in-f4.1e100.net.",
             "lga34s33-in-f11.1e100.net.",
-            "pd-in-f91.1e100.net.",
-            "pd-in-f190.1e100.net.",
-            "ord37s32-in-f11.1e100.net.",
             "ord37s32-in-f1.1e100.net.",
+            "yyz10s14-in-f11.1e100.net.",
+            "iad23s25-in-f11.1e100.net.",
             "ord37s32-in-f7.1e100.net.",
-            "lax17s51-in-f1.1e100.net.",
-            "mtv95s01-in-f7.1e100.net.",
-            "rw-in-f136.1e100.net.",
-            "rw-in-f93.1e100.net.",
-            "rw-in-f91.1e100.net.",
-            "rw-in-f19.1e100.net.",
-            "lu-in-f190.1e100.net.",
-            "lu-in-f136.1e100.net.",
-            "lq-in-f91.1e100.net.",
-            "lq-in-f190.1e100.net.",
-            "dfw25s44-in-f17.1e100.net.",
-            "mtv95s01-in-f17.1e100.net.",
-            "bl-in-f93.1e100.net.",
+            "ug-in-f136.1e100.net.",
+            "ug-in-f93.1e100.net.",
+            "ug-in-f190.1e100.net.",
+            "ug-in-f9.1e100.net.",
+            "uh-in-f136.1e100.net.",
+            "uh-in-f91.1e100.net.",
+            "uh-in-f190.1e100.net.",
+            "uh-in-f9.1e100.net.",
+            "bl-in-f190.1e100.net.",
             "bl-in-f91.1e100.net.",
-            "ww-in-f91.1e100.net.",
-            "ww-in-f190.1e100.net.",
-            "ww-in-f136.1e100.net.",
-            "ww-in-f9.1e100.net."
+            "bl-in-f136.1e100.net.",
+            "bl-in-f9.1e100.net.",
+            "rt-in-f136.1e100.net.",
+            "rt-in-f190.1e100.net.",
+            "rt-in-f91.1e100.net.",
+            "rt-in-f9.1e100.net.",
+            "hkg12s11-in-f1.1e100.net.",
+            "kul09s16-in-f1.1e100.net.",
+            "lq-in-f190.1e100.net.",
+            "lq-in-f91.1e100.net.",
+            "lq-in-f93.1e100.net.",
+            "lq-in-f13.1e100.net.",
+            "lt-in-f190.1e100.net.",
+            "lt-in-f136.1e100.net.",
+            "lt-in-f91.1e100.net.",
+            "lt-in-f9.1e100.net.",
+            "ord37s32-in-f11.1e100.net.",
+            "slc18s06-in-f1.1e100.net.",
+            "den02s02-in-f1.1e100.net."
         ],
         "redirect_to_https": true,
         "rtt": [
-            8,
-            129
+            18,
+            413
         ],
-        "scan_time": 1701049150.744103
+        "scan_time": 1701126427.928993
     }
 }
