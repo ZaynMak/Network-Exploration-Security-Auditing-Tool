@@ -5,42 +5,27 @@ results = {}
 
 check =['SSLv2', 'SSLv3', 'TLSv1.0', 'TLSv1.1', 'TLSv1.2', 'TLSv1.3']
 def main():
-    timer = time.time()
-
     file_in = sys.argv[1]
     file_out = sys.argv[2]
 
     
     read_file = open(file_in, "r")
     for line in read_file:
-        print(line)
         line = line.strip()
         results[line]={'scan_time': time.time()}
         scanner(line)
         scanner(line, 'AAAA')
-        print('ipv6')
         http_scanner(line)
-        print('http')
         tls_versions(line)
-        print('tls')
         rdns(line)
-        print('rdns')
         rtt(line) 
-        print('rtt')
         geos(line)
-        print('geos')
-
-        
-        #call other scanners for each website
-
     
     with open (file_out, "w" ) as f:
         json.dump(results, f, sort_keys = True, indent=4)
         f.close()
-    
     read_file.close()
-    #print("Time: ", time.time() - timer)
-    
+
 def scanner(name, typ = 'A'):
     ipvs = []
     for resolver in open('public_dns_resolvers.txt', 'r'):
@@ -63,8 +48,6 @@ def scanner(name, typ = 'A'):
                 ipvs.append(temp)
             result = result[end:].strip()
             
-
-
         if typ == 'A': 
             results[name]['ipv4'] = ipvs
         else:
@@ -105,8 +88,8 @@ def http_helper(name, counter=0):
                 return http_helper(new_name, counter+1)
             else:
                 return response, secure
-        except Exception as e:
-            print("ERROR helper: ", e)
+        except:
+            #print("ERROR helper: ", e)
             return None, secure
 
     else:
@@ -146,9 +129,8 @@ def http_scanner(name):
                 if "strict-transport-security:" in line.lower():
                     hsts = True
 
-    except Exception as e:
-        print("ERROR: ", e)
-        print("Insecure", name)
+    except:
+        #print("ERROR: ", e)
         insecure = False
 
     if not redirect:
@@ -187,8 +169,9 @@ def tls_versions(name):
                 end = root_ca_line.find(',', start)
             root_ca = root_ca_line[start:end]
 
-        except Exception as e:
-            print("ERROR: ", e)
+        except:
+            #print("ERROR: ", e)
+            pass
         
     results[name]['root_ca'] = root_ca
 
@@ -226,7 +209,7 @@ def rtt(name):
             time2 = time.time()
             rtts.append(time2 - time1)
         except Exception as e1:
-            print("ERROR rtt port 80: ", ipv4, e1)
+            #print("ERROR rtt port 80: ", ipv4, e1)
             time1 = time.time()
             try:
                 connect2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -236,7 +219,7 @@ def rtt(name):
                 time2 = time.time()
                 rtts.append(time2 - time1)
             except Exception as e2:
-                print("ERROR rtt port 22: ", e2)
+                #print("ERROR rtt port 22: ", e2)
                 time1 = time.time()
                 try:
                     connect3 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -246,7 +229,8 @@ def rtt(name):
                     time2 = time.time()
                     rtts.append(time2 - time1)
                 except Exception as e3:
-                    print("ERROR rtt port 443: ", e3)
+                    #print("ERROR rtt port 443: ", e3)
+                    pass
 
     
     if rtts:
