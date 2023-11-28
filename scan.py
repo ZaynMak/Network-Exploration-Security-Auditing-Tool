@@ -17,19 +17,18 @@ def main():
         line = line.strip()
         results[line]={'scan_time': time.time()}
         scanner(line)
-        # print('ipv4')
         scanner(line, 'AAAA')
         print('ipv6')
         http_scanner(line)
         print('http')
-        # tls_versions(line)
-        # print('tls')
+        tls_versions(line)
+        print('tls')
         rdns(line)
-        # print('rdns')
+        print('rdns')
         rtt(line) 
-        # print('rtt')
+        print('rtt')
         geos(line)
-        # print('geos')
+        print('geos')
 
         
         #call other scanners for each website
@@ -48,7 +47,7 @@ def scanner(name, typ = 'A'):
         resolver = resolver.strip()
         try:
             result = subprocess.check_output(["nslookup", "-type=" + typ, name, resolver], timeout = 2, stderr = subprocess.STDOUT).decode('utf-8')
-        except subprocess.TimeoutExpired:
+        except:
             continue
 
         # find where non-authoritative answer is
@@ -263,6 +262,8 @@ def geos(name):
                 loc = db.get(ipv4)
             except:
                 continue
+            if not loc:
+                continue
             if "country" not in loc:
                 continue
             country = loc['country']['names']['en']
@@ -276,6 +277,8 @@ def geos(name):
             if country not in geos:
                 geos.append(country)
     db.close()
+    if not geos:
+        geos = None
     results[name]['geo_locations'] = geos
 
 if __name__ == "__main__":

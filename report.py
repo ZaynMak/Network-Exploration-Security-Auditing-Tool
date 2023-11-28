@@ -13,16 +13,16 @@ def main():
 
     # Table 1
     table1 = texttable.Texttable()
-    table1.set_cols_width([10, 5, 15, 15, 10, 4, 4, 4, 10, 10, 15, 4])
-    table1.set_cols_align(["c"] * 12)
-    table1.set_cols_valign(["m"] * 12)
-    table1.add_row(["Domain", "Scan Time", "IPv4", "IPv6", "HTTP Server", "Insecure HTTP", "Redirect to HTTPS", "HSTS", "TSL Versions", "Root CA", "RDNS", "RTT"])
+    table1.set_cols_width([10, 5, 15, 15, 10, 4, 4, 4, 10, 10, 15, 4,10])
+    table1.set_cols_align(["c"] * 13)
+    table1.set_cols_valign(["m"] * 13)
+    table1.add_row(["Domain", "Scan Time", "IPv4", "IPv6", "HTTP Server", "Insecure HTTP", "Redirect to HTTPS", "HSTS", "TSL Versions", "Root CA", "RDNS", "RTT", 'Geo Locations'])
 
     for name in file:
         vals = file[name]
         table1.add_row([name, vals["scan_time"], vals["ipv4"], vals["ipv6"], vals["http_server"],
-                        vals["insecure_http"], vals["redirect_to_https"], vals["hsts"], 'vals["tsl_versions"]',
-                        'vals["root_ca"]', vals["rdns"], vals["rtt"]])
+                        vals["insecure_http"], vals["redirect_to_https"], vals["hsts"], vals["tls_versions"],
+                        vals["root_ca"], vals["rdns"], vals["rtt"], vals['geo_locations']])
 
     # Table 2
     table2 = texttable.Texttable()
@@ -31,7 +31,7 @@ def main():
     table2.add_row(["Domain", "RTT"])
     # print(file.items())
     for name in file:
-        if file[name]["rtt"] == []: # REMEMBER TO CHANGE TO NONE
+        if file[name]["rtt"] == None: # REMEMBER TO CHANGE TO NONE
             file[name]["rtt"] = [2000, 0]
     
     sorted_rtt = sorted(file.items(), key=lambda kv: kv[1]["rtt"][0])
@@ -46,22 +46,22 @@ def main():
         table2.add_row([sorted_rtt[i][0], sorted_rtt[i][1]["rtt"]])
     
     # Table 3
-    # root_pop = {}
-    # for name in file:
-    #     ca = file[name]['root_ca']
-    #     if ca in root_pop:
-    #         root_pop[ca]+=1
-    #     else:
-    #         root_pop[ca] = 1
+    root_pop = {}
+    for name in file:
+        ca = file[name]['root_ca']
+        if ca in root_pop:
+            root_pop[ca]+=1
+        else:
+            root_pop[ca] = 1
     
-    # table3 = texttable.Texttable()
-    # table3.set_cols_align(["c"] * 2)
-    # table3.set_cols_valign(["m"] * 2)
-    # table3.add_row(["Domain", "Root Certificate Authority"])
+    table3 = texttable.Texttable()
+    table3.set_cols_align(["c"] * 2)
+    table3.set_cols_valign(["m"] * 2)
+    table3.add_row(["Domain", "Root Certificate Authority"])
     
-    # sorted_root = sorted(root_pop.items(), key=lambda item: item[1])
-    # for i in range(len(sorted_root) -1, -1, -1):
-    #     table3.add_row([sorted_root[i][0], sorted_root[i][1]])
+    sorted_root = sorted(root_pop.items(), key=lambda item: item[1])
+    for i in range(len(sorted_root) -1, -1, -1):
+        table3.add_row([sorted_root[i][0], sorted_root[i][1]])
 
     # Table 4
     server_pop = {}
@@ -89,12 +89,12 @@ def main():
 
     supported = [0] * 6 #sslv2, sslv3, tls0, tls1, tls2, tls3
 
-    # versions = ['SSLv2', 'SSLv3', 'TLSv1.0', 'TLSv1.1', 'TLSv1.2', 'TLSv1.3']
-    # for name in file:
-    #     supports = file[name]['tls_versions']
-    #     for check in range(6):
-    #         if versions[check] in supports:
-    #             supported[check]+=1 
+    versions = ['SSLv2', 'SSLv3', 'TLSv1.0', 'TLSv1.1', 'TLSv1.2', 'TLSv1.3']
+    for name in file:
+         supports = file[name]['tls_versions']
+         for check in range(6):
+             if versions[check] in supports:
+                 supported[check]+=1 
 
     table5.add_row(['SSLv2', supported[0]/file_length])
     table5.add_row(['SSLv3', supported[1]/file_length])
@@ -118,8 +118,8 @@ def main():
     write_file.write(table1.draw())
     write_file.write("\nTable 2\n")
     write_file.write(table2.draw())
-    # write_file.write("\nTable 3\n")
-    # write_file.write(table3.draw())
+    write_file.write("\nTable 3\n")
+    write_file.write(table3.draw())
     write_file.write("\nTable 4\n")
     write_file.write(table4.draw())
     write_file.write("\nTable 5\n")
